@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    font-family: "Bebas Neue"; 
+    text-align: center;
+    color: #F8F5F1 ;
+    background: rgb(94,11,21);
+    background: linear-gradient(217deg, rgba(94,11,21,1) 0%, rgba(144,50,61,1) 37%, rgba(188,128,52,1) 100%);   
+    background-repeat: none;
+    background-attachment: fixed;
+    font-size: x-large;
+    text-shadow: 1px 1px #1b150e;
+}
+#textInput{
+    height: 38px;
+    width:auto;
+    font-family: "Bebas Neue";
+    font-size: larger;
+    padding: 0px;
+    border-width: 1px;
+    border-color: #F8F5F1;
+    border-style: solid;
+    background-color: #90323D;
+    color:#F8F5F1;
+    text-align: center;  
+}
+
+
+
+#submitButton{
+    height: 40px;
+    width: 100px;
+    font-family: "Bebas Neue";
+    font-size: larger;
+    border: none;
+    background-color: #F8F5F1;
+    color:#90323D;
+    padding: 0
+}
+
+
+#more{
+    opacity: 0;
+    height: 50px;
+    width: 100px;
+    font-family: "Bebas Neue";
+    font-size: larger;
+    border: none;
+    background-color: #F8F5F1;
+    color:#90323D;
+}
+
+
