@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="weather.js"></script>
+</head>
+
+
+
+
+<body>
+    
+    <div class = "searchBar">
+        <input id="textInput" type="text" placeholder="enter city here" />
+        <button id="submitButton"> Find Weather </button>
+    </div>
+
+    <div class = "weatherInfo">
+        <h1 id="cityName"> </h1>
+        <h2 id="countryName"> </h2>     
+        <h2 id="regionName"></h2>
+        <h2 id="localTime"></h2>
+        <h2 id="temp"> </h2>           
+        <h2 id="feelsLike"></h2>
+        <h2 id="uvIndex"></h2>
+        <h2 id="humidity"></h2>
+        <h2 id="windSpeed"></h2>
+        <div id = 'cloudInfo'>
+            <h2 id="cloudCondition"></h2>
+            <img id="cloudIcon"></h2>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+</html>
