@@ -1,0 +1,23 @@
+
+
+
+html {
+    background-image: url(https://www.wkbn.com/wp-content/uploads/sites/48/2022/07/clouds-cloudy-sky-spring-summer-fall-winter-weather-generic-8.jpg?w=1280) ;
+    background-size: cover;
+}
+
+.weatherInfo {
+    text-align: center;
+    background-color: bisque;
+    font-family: 'Petit Formal Script', cursive;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+.searchBar {
+    text-align: center;
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}   
