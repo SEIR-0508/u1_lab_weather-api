@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: rgb(128, 179, 245);
+    font-family: 'Itim', cursive;
+    height: 100%;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.page-title {
+    background-color: rgb(52, 0, 210);
+    padding: 2rem 0;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: 'Itim', cursive;
+    font-size: 3rem;
+}
+
+.cta {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.content-container {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#inputBar {
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: white solid 2px;
+    font-family: 'Itim', cursive;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#inputBar:hover {
+    border:rgb(52, 0, 210) solid 3px;
+}
+
+.see-weather {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: solid white 2px;
+    background-color: white;
+    font-family: 'Itim', cursive;
+    box-shadow: 2px 2px 4px rgba(250, 250, 250, 1);
+}
+
+.see-weather:hover {
+    border: solid rgb(52, 0, 210) 3px;
+    cursor: pointer;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(white, rgb(83, 83, 255));
+    border: white solid 4px;
+    width: 30vw;
+    box-shadow: 2px 2px 4px rgba(250, 250, 250, 1);
+
+}
+
+.results-title {
+    margin-top: 2rem;
+}
+
+.break {
+    width: 40%;
+    margin: 1rem 0;
+    border: solid black 1px;
+}
+
+#currentWeatherImage {
+    width: 20%;
+}
+
+.current-weather {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center center;
+    grid-gap: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.grid-left, .grid-right {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+.grid-left {
+    font-weight: 700;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.find-out-more {
+    padding: 2rem 0;
+    color: white;
+    font-family: 'Itim', cursive;
+    background-color: rgb(52, 0, 210);    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(113, 109, 246);
+    padding: .5rem 2rem;
+    border-radius: 15px;
+    border: solid white 2px;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color:rgb(167, 164, 245);
+    box-shadow: 2px 2px 4px rgba(250, 250, 250, 1);
+}
