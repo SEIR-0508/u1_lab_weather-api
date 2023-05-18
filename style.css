@@ -8,7 +8,7 @@ html, body {
     background-color: rgb(128, 179, 245);
     font-family: 'Itim', cursive;
     height: 100%;
-    position: relative;
+    /* position: relative; */
 }
 
 nav {
@@ -124,6 +124,8 @@ nav {
     grid-gap: 3rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .grid-left, .grid-right {
@@ -136,9 +138,10 @@ nav {
 }
 
 footer {
-    position: absolute;
+    /* position: absolute; */
+    margin-top: 2rem;
     width: 100%;
-    bottom: 0;
+   /*  bottom: 0; */
     text-align: center;
 }
 
