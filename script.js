@@ -126,7 +126,7 @@ async function lookOutside() {
         }
         if (srcPar.includes(`alerts=yes`)) {
             let alertData='';
-            alertData = response.data.alerts.alert ? `<div>Alerts: ${response.data.alerts.alert[0].headline}</div><div>${response.data.alerts.alert[0].desc}</div>` : `<div>No weather alerts.</div>`;
+            alertData = (response.data.alerts.alert.length > 0) ? `<div>Alerts: ${response.data.alerts.alert[0].headline}</div><div>${response.data.alerts.alert[0].desc}</div>` : `<div>No weather alerts.</div>`;
             alertBox.innerHTML = alertData;
         }
         
