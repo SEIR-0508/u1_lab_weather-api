@@ -1,0 +1,56 @@
+body {
+    background-color: pink;
+    color: white;
+  
+}
+
+.citySearch {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 4px -4px #ef3550,
+             8px -8px #f48fb1,
+             12px -12px #7e57c2;
+}
+
+#disclaimer {
+    margin-top: 0px;
+    font-size: 2rem;
+    text-shadow: 2px -2px #ef3550,
+             4px -4px #f48fb1,
+             6px -6px #7e57c2;
+}
+
+.regTemp {
+    text-align: center;
+    border: solid magenta;
+    padding: 10px;
+    width: 460px;
+    height: 360px;
+    margin-left: 150px;
+}
+
+.howFeel {
+    position: absolute;
+    transform: translate(610px, -383px);
+    text-align: center;
+    border: solid magenta;
+    padding: 10px;
+    width: 460px;
+    height: 360px;
+}
+
+#temp {
+    color: #ef3550;
+    font-size: 100px;
+}
+
+#feelTemp {
+    color: #7e57c2;
+    font-size: 100px
+}
