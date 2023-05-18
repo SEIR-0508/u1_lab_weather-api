@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPI</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <input id="textInput" type="text" placeholder="ENTER CITY HERE" />
+    <div id="weatherWhen">
+        <input type="radio" id="current" name="apiMethod" value='current'/>
+        <label for="current">Current</label>
+        <input type="radio" id="forecast" name="apiMethod" value='forecast'/>
+        <label for="forecast">Forecast</label>
+        <input type="radio" id="history" name="apiMethod" value='history'/>
+        <label for="history">History</label>
+    </div>
+    <button id="submitButton"> Check Weather </button>
+    <div id="promptSpace"></div>
+    <h1 id="cityName"></h1>
+    <h4 id="weatherDate"></h4>
+    <div id="temp"></div>
+    <div id="addData"></div>
+    <div id="alertBox"></div>
+</body>
+</html>

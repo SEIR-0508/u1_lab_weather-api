@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 3vmin;
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.5vmin;
+}
+
+h1 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vmin;
+    margin-bottom: 1vmin;
+}
+
+h4 {
+    margin-top: 3vmin;
+    font-size: 5vmin;
+    color: brown;
+}
+
+.dayBox {
+    width: 30vmin;
+    margin-bottom: 3vmin;
+}
+
+.highTemp {
+    color: rgb(251, 83, 83);
+}
+
+.lowTemp {
+    color: rgb(119, 201, 245);
+}
+
+
+#textInput {
+    width: 85vmin;
+    height: 10vmin;
+    font-size: 10vmin;
+    text-align: center;
+    background-color: rgb(251, 227, 193);
+    color: rgb(119, 201, 245);
+    border-style: none;
+}
+
+#textInput::placeholder {
+    color: rgba(178, 222, 246,.5);
+}
+
+#submitButton {
+    width: 50vmin;
+    color: white;
+    background-color: rgb(119, 201, 245);
+}
+
+#promptSpace {
+    width: 50vmin;
+}
+
+
+#city {
+    font-size: 12vmin;
+}
+#country {
+    font-size: 4vmin;
+    color:gray;
+}
+
+#tempBox {
+
+}
+
+#addData {    
+    width: 80vmin;
+    max-height: 60vmin;
+    display: grid;
+    grid-template-columns: repeat(2, 40vmin );
+    overflow-y: scroll;
+    justify-items: center;
+    border-left: solid;
+    border-right: solid;
+
+}
+
+#alertBox {
+    
+    margin-top: 5vmin;
+    max-width:100vmin;
+}
+
+
+#submitButton {
+    visibility: hidden;
+}
+
+
