@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url(https://w.forfun.com/fetch/45/45ec3eb3064104f48961775129a79d55.jpeg);
+}
+
+h1 {
+    margin-top: 50px;
+    color: #073B4C;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: aliceblue;
+    letter-spacing: 2px; /* Add letter spacing */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+input {
+    margin-top: 20px;
+    background-color: transparent;
+    border-color: #073B4C;
+    color: #073B4C;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: aliceblue;
+    padding: 10px; /* Add some padding */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+
+button {
+    margin-top: 10px;
+    background-color: transparent;
+    border: transparent;
+    color: #073B4C;
+    cursor: pointer;
+    text-decoration: underline;   
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: aliceblue;
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}
+
+button:hover {
+    color: #4c8896; 
+}
+
+#cityName {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #073B4C;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255); 
+}
+
+#temp {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #073B4C;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: aliceblue;
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}
+
+#weatherIcon {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 200px;
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+    }
+
+    
