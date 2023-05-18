@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
