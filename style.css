@@ -1,0 +1,42 @@
+header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+
+}
+
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#img {
+   width: 300px;
+   height: 200px;
+}
+
+#region {
+    text-decoration: underline;   
+}
+
+#tempF {
+    font-size: 19px;
+}
+
+#tempC {
+    font-size: 14px;
+}
+
+#feelsLikeF {
+    font-size: 19px;
+}
+
+#feelLikeC {
+    font-size: 14px;
+}
+
+#condition {
+    font-size: 19px;
+}
