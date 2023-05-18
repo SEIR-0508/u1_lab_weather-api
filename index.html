@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Formula 1 Weather</title>
+</head>
+<body>    
+    <div class="content-container">
+        <div class="title">
+            <h1>F1 Schedule 2023</h1>
+            <h2>2023 FIA FORMULA ONE WORLD CHAMPIONSHIP™ RACE CALENDAR</h2>
+            
+            <div class="dropdown-container">
+                <label for="race-names">Choose A Race:</label>
+                <select name="race-names" id="race-names">
+                    <option value="bahrain">Bahrain</option>
+                    <option value="saudi arabia">Saudi Arabia</option>
+                    <option value="australia">Australia</option>
+                    <option value="miami">United States</option>
+                    <option value="imola">Italy</option>
+                    <option value="monaco">Monaco</option>
+                    <option value="barcelona">Barcelona</option>
+                </select>
+            </div>
+        </div>
+        <div class="weather-info">
+            <h3>Race Date: <span id="race-date"></span></h3>
+            </br>
+            <h3>Country: <span id="country"></span></h3>
+            <h3>City: <span id="city"></span></h3>
+            <h3>Latitude: <span id="latitude"></span></h3>
+            <h3>Longitude: <span id="longitude"></span></h3>
+            </br>
+            <h3>Condition: <span id="condition"></span></h3>
+            <h3>Avg Temp (F): <span id="avgtemp"></span></h3>
+            <h3>Max Temp (F): <span id="maxtemp"></span></h3>
+            <h3>MinTemp (F): <span id="mintemp"></span></h3>
+            </br>
+            <h3>Sunrise: <span id="sunrise"></span></h3>
+            <h3>Sunset: <span id="sunset"></span></h3>
+            </br>
+            <h3>Race Winner: <span id="race-winner"></span></h3>
+            <h3>Team: <span id="team"></span></h3>
+            <h3>Nationality: <span id="nationality"></span></h3>
+            <h3>Driver #: <span id="driver-number"></span></h3>
+        </div>
+
+    </div>
+</body>
+</html>
