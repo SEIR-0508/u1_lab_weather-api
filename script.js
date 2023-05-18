@@ -27,7 +27,7 @@ button.addEventListener('click', async () => {
       let windDirection = document.querySelector('#windDirection')
 
       // Getting Data
-      let response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${textInput}&aqi=no`)
+      let response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${textInput}&aqi=no`)
       console.log(response)
       
 
@@ -44,7 +44,7 @@ button.addEventListener('click', async () => {
       // Wind Direction
       windDirection.innerHTML = `Wind: ${response.data.current.wind_dir}`
       
-      // let forecastResponse = await axios.get(`http://api.weatherapi.com/v1/future.json?key=${apiKey}&q=${textInput}&days=5aqi=no`)
+      // let forecastResponse = await axios.get(`https://api.weatherapi.com/v1/future.json?key=${apiKey}&q=${textInput}&days=5aqi=no`)
       // console.log(forecastResponse)
 
 })
