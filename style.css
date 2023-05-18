@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(91, 165, 214);
+    background: no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin-top: 300px;
+    color: black;
+}
+
+button {
+    border-radius: 100%;
+    background-color: rgb(255, 233, 185);
+}
+button:hover {
+    background-color: rgb(206, 190, 155);
+}
+
+input {
+    background-color: rgb(255, 233, 185);
+    border-radius: 8px;
+}
+#weatherCondition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
