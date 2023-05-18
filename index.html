@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <nav>
+        <h1 class="page-title">Weather Information App</h1>
+    </nav>
+    <div class="hero-section">
+        <h2 class="cta">FIND YOUR CITY!</h2>
+        <div class="input-section">
+            <input type="text" id="inputBar" placeholder="Type your city and state here..">
+            <button class="see-weather" id="seeWeatherButton">Search</button>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="results-container">
+            <h1 class="results-title">Forecast</h1>
+            <hr class="break">
+            <img id="currentWeatherImage" src="" alt="">
+            <p class="current-weather" id="currentWeather"></p>
+            <h3 class="results-name" id="cityTitle"></h3>
+            <hr class="break">
+            <div class="results-grid">
+                <ul class="grid-left">
+                    <li class="grid-item-title">Local Date/Time: </li>
+                    <li class="grid-item-title">Current Temperature: </li>
+                    <li class="grid-item-title">Feels Like: </li>
+                    <li class="grid-item-title">UV Index: </li>
+                    <li class="grid-item-title">Wind Speed: </li>
+                    <li class="grid-item-title">Wind Direction: </li>
+                </ul>
+                <ul class="grid-right">
+                    <li class="result-item" id="cityTime"></li>
+                    <li class="result-item" id="cityTemp"></li>
+                    <li class="result-item" id="cityFeelsLikeF"></li>
+                    <li class="result-item" id="cityUv"></li>
+                    <li class="result-item" id="cityWindSpeed"></li>
+                    <li class="result-item" id="cityWindDirection"></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <footer>
+        <h1 class="find-out-more"><a href="https://weather.com/" target="_blank">Find out more!</a></h1>
+    </footer>
+</body>
+</html>
