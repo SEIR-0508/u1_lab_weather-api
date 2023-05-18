@@ -1,0 +1,138 @@
+/* Atributes */
+
+body {
+    background-color: #040f13;
+    color: cornsilk;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Class's */
+.col {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%
+}
+
+.searchBox {
+    width: 50%;
+    background-color: #0f3c4c;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.searchBtn {
+    width: 25%;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: lightcoral;
+    border-radius: 1.5rem;
+}
+
+.forecast {
+    background-color:#0f3c4c;
+    height: 25%;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0 .5rem;
+}
+
+.conditions {
+    background-color: #0f3c4c;
+    height: 25%;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0 .5rem;
+}
+
+.future {
+    background-Color: #0f3c4c;
+    height: 100%;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0 .5rem;
+}
+
+.line {
+    border-bottom: .125rem solid cornsilk;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.line:last-child {
+    border-bottom: none;
+
+}
+
+.leftBig {
+    height: 400px;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.rightBig {
+    padding-top: 2rem;
+}
+
+
+.current {
+    font-size: 4rem;
+}
+
+.pic {
+    width: 100%;
+}
+
+.small {
+    width: 50%;
+}
+
+.tbl td {
+    border-right: .125rem solid cornsilk;
+}
+
+.tbl td:last-child {
+    border-right: none;
+}
+/* Id's */
+
+#curLocal {
+    font-size: 2rem;
+}
+
+#curRain {
+    font-size: 2rem;
+}
+
+#curTemp {
+    font-size: 2rem;
+}
+
+#feel {
+    margin: 16px;
+}
+
+#uv {
+    margin: 16px;
+}
+
+#wind {
+    margin: 16px;
+}
+
+#windDir {
+    margin: 16px;
+}

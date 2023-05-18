@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <input class="searchBox" placeholder="Search for a city, state">
+        <button class="searchBtn">Search</button>
+    </header>
+    <main>
+        <div class="left">
+            <div class="col">
+                <div class="col">
+                    <div class="leftBig">
+                        <div class="row" id="curLocal">
+                        </div>
+                        <div class="row">
+                        </div>
+                        <div>
+                            <p>Rain Chance:</p>
+                        </div>
+                        <div class="row" id="curRain">
+                        </div>
+                        <div>
+                            <p>Current Temperature:</p>
+                        </div>
+                        <div class="row" id="curTemp">
+                        </div>
+                        <div class="pic" id="picture">  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="forecast">
+                    <div class="row">
+                        <h3>Today's Forecast:</h3>
+                    </div>
+                    <div class="row">
+                        <table class="tbl">
+                            <thead id="tableHead">
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr id="row1"></tr>
+                                <tr id="row2"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row conditions">
+                <div class="row">
+                    <h3>Air Conditions:</h3>
+                    <div class="col">
+                        <div>
+                            <p>Feels like:</p>
+                        </div>
+                        <div class="row" id="feel">
+                        </div>
+                        <div>
+                            <p>UV Index:</p>
+                        </div>
+                        <div class="row" id="uv">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <p>Wind Speed:</p>
+                        </div>
+                        <div class="row" id="wind">
+
+                        </div>
+                        <div>
+                            <p>Wind Direction:</p>
+                        </div>
+                        <div class="row" id="windDir">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="col future forecast">
+                <div class="row forecast" id="future">
+                    <h3>7-Day Forecast:</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="script.js" charset="UTF-8"></script>
+</html>
