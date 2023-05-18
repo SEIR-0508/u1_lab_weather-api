@@ -1,0 +1,42 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #3A95C1; */
+    background-image: repeating-linear-gradient(#3A95C1, #838DA8, #838DA8, #918BA3, #8185B3, #717EC3);
+    background-attachment: fixed;
+    color: white;
+}
+
+/* h1 {
+} */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    /* border: 0; */
+    padding: 1vmin;
+}
+
+input {
+    padding: 1vmin;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+#condition {
+    display: flex;
+    align-items: center;
+}
