@@ -11,6 +11,10 @@ const uv = document.getElementById('uv')
 const wind = document.getElementById('wind')
 const windDir = document.getElementById('windDir')
 const oldFuture = document.getElementById('future')
+const tableHead = document.getElementById('tableHead')
+const row1 = document.getElementById('row1')
+const row2 = document.getElementById('row2')
+const picture = document.getElementById('picture')
 
 /* Variables */
 let myLocation = 'San Antonio'
@@ -23,12 +27,14 @@ let futureInfo = []
 searchBox.addEventListener('keypress', () => {
     if (event.key === 'Enter') {
         myLocation = searchBox.value
+        searchBox.value = ""
         getInfo()
     }
 })
 
 searchBtn.addEventListener('click', () => {
     myLocation = searchBox.value
+    searchBox.value = ""
     getInfo()
 })
 
@@ -45,12 +51,13 @@ const getInfo = async () => {
 getInfo()
 
 const buildPage = async () => {
+    picture.innerHTML = ""
     curLocal.innerText = `${myInfo.location.name}, ${myInfo.location.region}`
     curRain.innerText = `${futureInfo.forecastday[0].day.daily_chance_of_rain}%`
     let img = document.createElement('img')
     img.src = `${currentInfo.condition.icon}`
     img.classList.add('pic')
-    document.getElementById('picture').appendChild(img)
+    picture.appendChild(img)
     curTemp.innerText = `${Math.round(currentInfo.temp_f)} F`
     feel.innerHTML = `${Math.round(currentInfo.feelslike_f)}`
     uv.innerText = `${currentInfo.uv}`
@@ -66,6 +73,7 @@ const hourForecast = () => {
 }
 
 const futureForecast = () => {
+    oldFuture.innerHTML = "<h3>7 Day Forecast:</h3>"
     futureInfo.forecastday.forEach( day => {
         let date = day.Date
         let highTemp = Math.round(day.day.maxtemp_f)
@@ -81,13 +89,16 @@ const futureForecast = () => {
         forecast.appendChild(img)
         forecast.appendChild(weather)
         forecast.classList.add('line')
-        document.getElementById('future').appendChild(forecast)
+        oldFuture.appendChild(forecast)
 
     })
 }
 
 
 const todaysForecast = () => {
+    tableHead.innerHTML = ""
+    row1.innerHTML = ""
+    row2.innerHTML = ""
     console.log(futureInfo.forecastday[0].hour.length)
     for (var i = 0; i < futureInfo.forecastday[0].hour.length; i+=4) {
         let hour = futureInfo.forecastday[0].hour[i]
@@ -106,9 +117,9 @@ const todaysForecast = () => {
         heading.appendChild(headingText)
         cell.appendChild(img)
         cell2.appendChild(cellData)
-        document.getElementById('tableHead').appendChild(heading)
-        document.getElementById('row1').appendChild(cell)
-        document.getElementById('row2').appendChild(cell2)       
+        tableHead.appendChild(heading)
+        row1.appendChild(cell)
+        row2.appendChild(cell2)       
     }
 }
 
