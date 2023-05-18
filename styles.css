@@ -33,6 +33,7 @@ h1{
     text-align: center;
     border-radius: 5%;
     text-shadow:1px 1px 2px #FEE9E5;
+    /*https://www.w3schools.com/cssref/css3_pr_text-shadow.php*/
 }
 
 input{
@@ -90,6 +91,7 @@ p{
     float:right;
     margin:0 100px;
     transition:padding 2s;
+    /*https://www.w3schools.com/css/css3_transitions.asp*/
 }
 
 #city-div:hover{
