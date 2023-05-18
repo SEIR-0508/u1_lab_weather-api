@@ -1,14 +1,20 @@
 console.log(`working`)
-
+//initialized variables
 const apiKey = `10072b800a1940dface180526231705` 
-const button = document.getElementById('submitButton')
-const input = document.getElementById(`textinput`)
-const cityName = document.getElementById(`cityName`)
-const temp = document.getElementById(`temp`)
+const button = document.querySelector(`#submitButton`)
+const tempElement = document.querySelector(`#temp`)
+const responseElement = document.querySelector(`#response`)
+//const location = document.querySelector(`cityName`)
 
-const getName = async () => {
-    let response = await axios.get (`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${input}&aqi=no`)
-}
-getName()
+button.addEventListener('click', async () => {
+    let searchInput = document.querySelector('input').value
+    let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${searchInput}`)
+    console.log(response.data)
+ 
+    let city = response.data.location.name;
+    let temperature = response.data.current.temp_c;
 
+    tempElement.textContent = `Temperature: ${temperature}°C`;
+    responseElement.textContent = `City: ${city}`;
 
+})
