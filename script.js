@@ -3,9 +3,9 @@
 const button = document.getElementById(`submitButton`);
 const input = document.getElementById(`textInput`);
 const cityName = document.getElementById(`cityName`);
-const temp = document.getElementById(`temp`);
 const radios = document.querySelectorAll('input[name="apiMethod"]');
 const promptSpace = document.getElementById('promptSpace');
+const weatherDate = document.getElementById('weatherDate');
 const addData = document.getElementById('addData');
 
 //// ESTABLISH ADDITIONAL VARIABLES ////
@@ -52,12 +52,14 @@ function initialClick() {
         } else if (additionalSrcPar[`${apiMethod}`][i] === 'alerts') {
             promptSpace.innerHTML += `<input type='checkbox' name='prompt' id='alerts'> <label for='alerts'> Show Weather Alerts? </label><br>`
         } else if (additionalSrcPar[`${apiMethod}`][i] === 'days') {
-            promptSpace.innerHTML += `<input type='number' name='prompt' id='days' value='1' min='1'> <label for='days'> Enter days </label><br>`
+            promptSpace.innerHTML += `<input type='number' name='prompt' id='days' value='1' min='1' max='10'> <label for='days'> Enter days </label><br>`
         } else if (additionalSrcPar[`${apiMethod}`][i] === 'dt') {
             promptSpace.innerHTML += `<input type='date' name='prompt' id='dt' value='2023-05-17'> <label for='dt'> Enter Desired Date (Up to One Year Ago) </label><br>`
         }
     }
     
+    button.style.visibility='visible';
+
     ///NEED TO DISABLE THE CLICK HERE BUTTON UNTIL THIS POINT
 }
 
@@ -80,16 +82,54 @@ async function lookOutside() {
 
     console.log(`testing ${srcPar}`);
     console.log(`try ${additionalSrcPar[`${apiMethod}`]}`);
+
+
+    input.value = input.value ? input.value : 'pittsburgh'; //in case nothing is entered, this will autofill with pittsburgh. Go Steelers!
     
     let response = await axios.get(`http://api.weatherapi.com/v1/${apiMethod}.json?key=${apiKey}&q=${input.value}${srcPar}`);
     console.log(response);
 
     ///// Now that I've extracted things - time to populate
 
-    cityName.innerHTML = response.data.location.name;
-    temp.innerHTML = `${response.data.current.temp_c}&deg;C`;
+    cityName.innerHTML = `${response.data.location.name}, <span id='country'>${response.data.location.country}</span>`;
 
+    
+    // definitly a more clean way to do this next section, but I'm on hour 6 rn and tired of starting at my screen for today so will do this quick and dirty. 
 
+    addData.innerHTML = '';
+
+    if (apiMethod === 'current') {
+        weatherDate.innerHTML = `Today's Weather:`;
+        addData.innerHTML = `<div><span class='aveTemp'>Current Temp: </span>${response.data.current.temp_c}&deg;C</div>`;
+        if (srcPar.includes(`aqi=yes`)) {
+            addData.innerHTML += `<div>US EPA Index: ${response.data.current.air_quality['us-epa-index']}</div>`;
+        }
+    } else if (apiMethod === 'forecast') {
+        weatherDate.innerHTML = `Weather Forecast!`;
+
+        console.log(`length of forecast ${response.data.forecast.forecastday.length}`);
+
+        for (i=0; i<response.data.forecast.forecastday.length; i++) {
+            
+            let aqiData='';
+            let alertData='';
+            if (srcPar.includes(`aqi=yes`)) {
+                aqiData= i<=3 ? `<div>US EPA Index: ${response.data.forecast.forecastday[i].day.air_quality['us-epa-index']}</div>` : '<div>No air quality data yet.'
+            }
+            console.log(aqiData);
+           
+
+            addData.innerHTML +=`<div class=forecastDate>${response.data.forecast.forecastday[i].date}</div><div><span class='highTemp'>Highest: </span>${response.data.forecast.forecastday[i].day.maxtemp_c}&deg;C</div><div><span class='lowTemp'>Lowest: </span>${response.data.forecast.forecastday[i].day.mintemp_c}&deg;C</div>${aqiData}<br>`
+        }
+        if (srcPar.includes(`alerts=yes`)) {
+            alertData = response.data.alerts.alert ? `<div>Alerts: ${response.data.alerts.alert[0].headline}</div><div>${response.data.alerts.alert[0].desc}</div>` : `<div>No weather alerts.</div>`;
+        }
+        addData.innerHTML += alertData;
+        
+    } else if (apiMethod === 'history') {
+        weatherDate.innerHTML = `The weather on ${response.data.forecast.forecastday[0].date}:`;
+        addData.innerHTML = `<div><span class='highTemp'>Highest: </span>${response.data.forecast.forecastday[0].day.maxtemp_c}&deg;C</div><div><span class='lowTemp'>Lowest: </span>${response.data.forecast.forecastday[0].day.mintemp_c}&deg;C</div><div><span class='aveTemp'>Average: </span>${response.data.forecast.forecastday[0].day.avgtemp_c}&deg;C</div>`
+    }
 
 
 }
