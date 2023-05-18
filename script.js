@@ -29,6 +29,7 @@ searchBox.addEventListener('keypress', () => {
 
 searchBtn.addEventListener('click', () => {
     myLocation = searchBox.value
+    getInfo()
 })
 
 
