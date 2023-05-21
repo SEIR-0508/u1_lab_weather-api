@@ -1,0 +1,50 @@
+body{
+    background-image: url('weatherone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace
+}
+#textInput{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(203, 221, 248);
+    width: 400px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+}
+input:focus {
+    outline: none;
+}
+#submitButton{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: rgb(157, 182, 246);
+    margin-top: 10px; 
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+
+} 
+ #container{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 500px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+} 
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
