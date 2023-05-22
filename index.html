@@ -7,29 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+      </style>
     <link rel="stylesheet" href="style.css">
     <title>Weather</title>
 </head>
 
 <body>
-
+<div id="searchbar">
     <input id="inputText" type="text" placeholder="Enter city here" />
     <button id="submitButton">Search</button>
+</div>
 
-    <div class="banner">
         <div id="response"> </div>
-        <div id="region"> </div>
-        <div id="country"> </div>
-    </div>
-
-    <div id="current">
         <div id="temp"> </div>
         <div id="feelslike"> </div>
         <div id="humidity"> </div>
-        <div id="condition">
-        <div id="precip-chance"> </div>
-    </div>
-
+        <div id="condition"> </div>
 
 </body>
 
