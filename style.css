@@ -1,0 +1,27 @@
+
+html {
+    background-image: url (https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9fiewljZJ1jH2deps_jx8PHaHgW-5L3V_A&usqp=CAU);
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+
+#container {
+    text-align: center;
+    flex: space-around;
+    background-color: rgb(106, 225, 106);
+    color: rgb(34, 144, 247);
+    border-radius: 10%;
+    margin: 20px;
+    padding: 20px
+
+}
+
+
+
+body {
+  background-color: black;
+}
