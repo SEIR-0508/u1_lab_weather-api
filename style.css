@@ -1,0 +1,25 @@
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    font-family: Poiret One, sans-serif;
+    font-size:  2rem;
+    background-color: #C4AF9A;
+    color: #41414E;
+}
+
+.banner {
+    border: 2px solid black;
+}
+
+#inputText, #submitButton {
+    font-family: Poiret One, sans-serif;
+    padding: 10px;
+    border: none;
+    background-color: #C4AF9A;
+    color: #1E1E24;
+    border: 4px solid #FB9F89;
+    border-radius: 30px;
+    font-weight: bold
+}
