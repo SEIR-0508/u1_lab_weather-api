@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+      <script defer src="script.js"></script>
+      <title>Weather API</title>
+</head>
+
+<nav>
+      <div class="logo">
+            <a href="https://www.weatherapi.com/" title="Free Weather API"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" border="0" width="95"></a>
+      </div>
+      <div class="appName">Weather API</div>
+</nav>
+
+<body>
+      <!-- Search Bar -->
+      <div class="search">
+            <input id="textInput" type="text" placeholder="Enter City, State" />
+            <button id="submitButton"> Search </button>
+      </div>
+      <div class="weatherCard">
+            <!-- Card Information -->
+            <h4 id="currentDate"></h4>
+            <h1 id="cityName"></h1>
+            <h3 id="conditions"></h3>
+            <img id="conditionsIcon">  
+            <h2 id="temp"></h2>
+            <h2 id="humidity"></h2>
+            <h2 id="windDirection"></h2>
+      </div>
+      <!-- <h2 id="fiveDayForecast">5 Day Forecast</h2>
+      <div class="fiveDayForecast">
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+      </div> -->
+
+
+
+
+</body>
+
+
+
+</html>
