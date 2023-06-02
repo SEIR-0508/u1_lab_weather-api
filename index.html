@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check the Weather</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Weather API</h1>
+  <form>
+    <input type="text"  value="" placeholder="Enter location name or zip code"  id="inputBar">
+    <input type="button"  value="Click here" id="searchButton">
+  </form>
+  <h2 id="locationName"></h2>
+  <div class ='locationInfo'>
+    <img id="weatherImage">
+    <div id="locationWeather"></div>
+    <div id="locationAirQuality"></div>
+    <div id="locationTempC"></div>
+    <div id="locationTempF"></div>
+    <div id="feelsLike"></div>
+    <div id="locationCondition"></div>
+    <div id="uvIndex"></div>
+    <div id="humidityPoint"></div>
+    <div id="pressureInch"></div>
+    <div id="localTime"></div>
+    <div id="'location"></div>
+  </div>
+</body>
+</html>

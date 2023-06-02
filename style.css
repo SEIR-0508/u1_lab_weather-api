@@ -1,0 +1,62 @@
+body {
+  display: grid-auto-rows;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Syncopate', sans-serif;
+  margin: 0 auto;
+  padding: 4px;
+  border: 20px;
+  font-size: 25px;
+  background-color: gainsboro;
+}
+
+.h1 {
+  display: grid;
+  font-weight: largest;
+  font-family: 'Syncopate', sans-serif;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.h2 {
+  font-family: 'Syncopate', sans-serif;
+  display: grid;
+  justify-content: center;
+}
+
+#inputBar {
+  width: 600px;
+  text-align: center;
+  font-size: 21px;
+  font-family: 'Syncopate', sans-serif;
+  padding: 10px;
+  background-color: gainsboro;
+  border: 2px black solid;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+  margin: auto 0;
+  background-color:rgba(220, 220, 220, 0.249);
+}
+
+#searchButton {
+  font-size: 18px;
+  font-family: 'Syncopate', sans-serif;
+  border: 20px;
+  background-color:rgba(220, 220, 220, 0.249);
+  border: 2px solid black;
+  margin: 4px;
+}
+
+.locationInfo {
+  display: grid-auto-rows;
+  border: 2px solid black;
+  height: 75vh;
+  margin: 25px;
+  font-size: 30px;
+  justify-content: space-around;
+}
+
