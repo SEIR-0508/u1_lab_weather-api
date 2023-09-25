@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #56CCF2, #2F80ED);
+    color: white;
+}
+
+input[type="text"] {
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+}
+
+#title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1, h2 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
