@@ -1,4 +1,7 @@
-# SEIR 0508
+# SEIR 0911EC
+
+<img src ="./assets/Weather1.jpeg">
+
 
 ### Open Weather API
 
@@ -64,4 +67,6 @@ Will ...q=sanfrancisco... in the url work?
  
 Once you have your data logged, add in some style through a CSS file. It looks like our Weather has an icon as well, can we have that image rendered on screen?
 
+
+<img src ="./assets/GC1.webp">
 
