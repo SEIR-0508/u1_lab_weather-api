@@ -1,0 +1,28 @@
+body {
+	background-color: lightblue;
+	text-align: center;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#submitButton {
+	font-size: 10px;
+}
+
+#temp {
+	color: blue;
+}
+
+#feelsLikeTemp {
+	color: lightslategrey;
+	display: block;
+	font-style: italic;
+	margin-top: 25px 0px;
+}
+
+.iconContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
