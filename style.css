@@ -1,21 +1,44 @@
 body {
-	background-color: lightblue;
+	display: flex;
+	flex-direction: column;
+	background-image: url('https://img.freepik.com/free-photo/amazing-beautiful-sky-with-clouds_58702-1647.jpg?w=996&t=st=1706233488~exp=1706234088~hmac=68cfe85de8803e6eb54bd51b781251492311bc8c7951346118ebe616b403b745');
+	background-size: auto;
 	text-align: center;
-	font-size: 10px;
+	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 200px;
 }
 
+div {
+	font: bold;
+	font-size: 60px;
+	color: black;
+	margin-top: 40px;
+}
+
+#textInput,
 #submitButton {
-	font-size: 10px;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	display: block;
+	width: 40%;
+	text-align: center;
+	max-width: fit-content;
 }
 
+h1 {
+	font-size: 30px;
+}
 #temp {
+	font-size: 20px;
 	color: blue;
 }
 
 #feelsLikeTemp {
-	color: lightslategrey;
-	display: block;
+	color: rgb(19, 68, 117);
 	font-style: italic;
 	margin-top: 25px 0px;
 }
@@ -25,4 +48,28 @@ body {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	height: 20vh;
+	width: 80vw;
+}
+
+.iconContainer.slide {
+	animation: slide 10s linear infinite;
+}
+
+#icon {
+	height: auto;
+	width: 20%;
+}
+
+@keyframes slide {
+	0%,
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+	25% {
+		transform: translate3d(-200px, 0, 0);
+	}
+	75% {
+		transform: translate3d(200px, 0, 0);
+	}
 }
